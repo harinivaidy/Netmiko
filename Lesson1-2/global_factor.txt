@@ -44,8 +44,9 @@ Capability codes:
 Device ID            Local Intf      Hold-time  Capability  Port ID  
 nxos2.lasthop.io     Eth1/1          120        BR          Ethernet1/1   
 nxos2.lasthop.io     Eth1/2          120        BR          Ethernet1/2   
+nxos2.lasthop.io     Eth1/3          120        BR          Ethernet1/3   
 nxos2.lasthop.io     Eth1/4          120        BR          Ethernet1/4   
-Total entries displayed: 3
+Total entries displayed: 4
 
 nxos1# 
 
@@ -56,8 +57,9 @@ Capability codes:
 Device ID            Local Intf      Hold-time  Capability  Port ID  
 nxos2.lasthop.io     Eth1/1          120        BR          Ethernet1/1   
 nxos2.lasthop.io     Eth1/2          120        BR          Ethernet1/2   
+nxos2.lasthop.io     Eth1/3          120        BR          Ethernet1/3   
 nxos2.lasthop.io     Eth1/4          120        BR          Ethernet1/4   
-Total entries displayed: 3
+Total entries displayed: 4
 
 nxos1# 
 

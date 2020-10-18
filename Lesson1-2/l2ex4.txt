@@ -1,0 +1,37 @@
+
+
+
+cisco3#terminal width 511
+cisco3#terminal length 0
+cisco3#
+cisco3#
+cisco3#sh ip name-server
+255.255.255.255
+
+cisco3#
+cisco3#ping google.com
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.217.6.78, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/4 ms
+cisco3#
+cisco3#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+cisco3(config)#
+cisco3(config)#ip name-server 1.1.1.1
+cisco3(config)#ip name-server 1.0.0.1
+cisco3(config)#ip domain-lookup
+cisco3(config)#
+cisco3(config)#end
+cisco3#
+cisco3#sh ip name-server
+1.1.1.1
+1.0.0.1
+
+cisco3#
+cisco3#ping google.com
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.217.6.78, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/5/12 ms
+cisco3#
