@@ -1,0 +1,12 @@
+
+
+vlan 100
+name Kola
+vlan 200
+name Rose
+vlan 300
+name Jas
+vlan 400
+name Teddy
+vlan 500
+name Coco

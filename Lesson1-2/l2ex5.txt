@@ -1,0 +1,237 @@
+
+Cisco NX-OS Software
+Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+nxos2# terminal width 511
+terminal length 0
+
+nxos2# terminal length 0
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Nexus 9000v is a demo version of the Nexus Operating System
+
+Software
+  BIOS: version 
+ NXOS: version 9.2(3)
+  BIOS compile time:  
+  NXOS image file is: bootflash:///nxos.9.2.3.bin
+  NXOS compile time:  2/17/2019 5:00:00 [02/17/2019 15:07:27]
+
+
+Hardware
+  cisco Nexus9000 9000v Chassis 
+   with 6096260 kB of memory.
+  Processor Board ID 9B2B28CMF9S
+
+  Device name: nxos2
+  bootflash:    3509454 kB
+Kernel uptime is 62 day(s), 21 hour(s), 11 minute(s), 56 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+
+nxos2# 
+
+nxos2# configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+
+nxos2(config)# 
+
+nxos2(config)# 
+
+nxos2(config)# 
+
+nxos2(config)# vlan 100
+
+nxos2(config-vlan)# name Kola
+
+nxos2(config-vlan)# vlan 200
+
+nxos2(config-vlan)# name Rose
+
+nxos2(config-vlan)# vlan 300
+
+nxos2(config-vlan)# name Jas
+
+nxos2(config-vlan)# vlan 400
+
+nxos2(config-vlan)# name Teddy
+
+nxos2(config-vlan)# vlan 500
+
+nxos2(config-vlan)# name Coco
+
+nxos2(config-vlan)# 
+
+nxos2(config-vlan)# end
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# 
+
+nxos2# copy running-config startup-config
+
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+[########################################] 100%
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+
+nxos2# 
