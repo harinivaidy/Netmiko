@@ -10,7 +10,7 @@ device = {
     "password": password,
     "secret": password,
     "device_type": "cisco_ios",
-    "session_log": "my_output.txt",
+    "session_log": "my_output_l2-ex6.txt",
 }
 
 
