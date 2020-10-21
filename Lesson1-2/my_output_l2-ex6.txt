@@ -21,3 +21,4 @@ Password:
 cisco4#
 cisco4#
 cisco4#
+cisco4#exit

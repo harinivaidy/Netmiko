@@ -25,6 +25,6 @@ print("-"*150)
 print(output2)
 print("-"*150)
 j = list(output1[0].values())[3]
-print(j)
+print("\nport ID of the neighbor {}".format(j))
 print(net_connection.find_prompt())
 
