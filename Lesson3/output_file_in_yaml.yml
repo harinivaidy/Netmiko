@@ -1,0 +1,5 @@
+[{device_type: cisco_ios, host: cisco3.lasthop.io, password: joker, secret: '8982',
+    username: harinipython}, {device_type: arista, host: arista1.lasthop.io, password: joker,
+    username: harinipython}, {device_type: arista, host: arista2.lasthop.io, password: joker,
+    username: harinipython}, {device_type: juniper_junos, host: srx2.lasthop.io, password: joker,
+    username: harinipython}]
