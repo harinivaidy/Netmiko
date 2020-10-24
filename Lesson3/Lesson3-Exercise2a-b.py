@@ -48,6 +48,26 @@ pprint(new_list)
 
 device1['secret'] = '8982'
 
+print("Write the python in YAML")
+print("^"*50)
 f = open("output_file_in_yaml.yml", "w")
 yaml.dump(new_list, f, default_flow_style=True)
+
+print("Convert back to Python file")
+print("^"*50)
+filename = input("Enter Filename : ")
+f = open(filename)
+k= yaml.load(f)
+pprint(k)
+
+
+
+
+
+
+
+
+
+
+
 
