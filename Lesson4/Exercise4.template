@@ -4,10 +4,10 @@ Value NAME (\S+)
 Value INTERFACE (\S+)
 
 Start
- ^MAC.*Flags$$ -> ExtractValues
+  ^MAC.*Flags$$ -> ExtractValues
 
 ExtractValues
- ^${MAC_ADDRESS}\s*${ADDRESS}\s*${NAME}\s*${INTERFACE} -> Record
+  ^${MAC_ADDRESS}\s*${ADDRESS}\s*${NAME}\s*${INTERFACE} -> Record
 
 
 
