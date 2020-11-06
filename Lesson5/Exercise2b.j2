@@ -1,0 +1,18 @@
+nxos1
+
+interface {{Interface1}}
+  ip address {{IP_Address1}}/{{netmask}}
+
+router bgp {{AS_number}}
+  neighbor {{neighbor_Ip1}} remote-as {{AS_number}}
+    address-family ipv4 unicast
+
+
+nxos2
+
+interface {{Interface2}}
+  ip address {{IP_Address2}}/{{netmask}}
+
+router bgp {{AS_number}}
+  neighbor {{neighbor_Ip2}} remote-as {{AS_number}}
+    address-family ipv4 unicast
