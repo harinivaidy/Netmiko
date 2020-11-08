@@ -20,8 +20,8 @@ nxos2 = {
 
     }
 
-for i in (nxos1,nxos2):
-
-    ssh_connection = Netmiko(**i)
-    print(ssh_connection.find_prompt())
-    ssh_connection.disconnect()
+#for i in (nxos1,nxos2):
+#
+#    ssh_connection = Netmiko(**i)
+#    print(ssh_connection.find_prompt())
+#    ssh_connection.disconnect()

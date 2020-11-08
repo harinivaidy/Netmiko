@@ -35,10 +35,6 @@ nxos1#
 
 nxos1# 
 
-nxos1# 
-
-nxos1# 
-
 nxos1# configure terminal
 Enter configuration commands, one per line. End with CNTL/Z.
 
@@ -52,23 +48,11 @@ nxos1(config)# interface Ethernet1/4
 
 nxos1(config-if)#   ip address 10.1.100.1/24
 
+end
+
 nxos1(config-if)# 
 
 nxos1(config-if)# router bgp 22
 
 
 nxos1(config-router)#   neighbor 10.1.100.2 remote-as 22
-end
-
-nxos1(config-router-neighbor)#     address-family ipv4 unicast
-
-
-nxos1(config-router-neighbor-af)# 
-
-nxos1(config-router-neighbor-af)# 
-
-nxos1(config-router-neighbor-af)# ##
-
-nxos1(config-router-neighbor-af)# 
-
-nxos1(config-router-neighbor-af)# end
