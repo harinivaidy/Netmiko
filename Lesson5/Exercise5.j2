@@ -1,0 +1,21 @@
+{#Cisco3 config#}
+
+
+hostname {{HOSTNAME}}
+!
+{%- include 'AAA.j2' %}
+!
+{%- include 'CLOCK.j2' %}
+!
+ip name-server {{NAME_SERVER1}}
+ip name-server {{NAME_SERVER2}}
+!
+!
+interface GigabitEthernet0/0/0
+ ip address {{IP_ADDRESS}} {{SUBNET_MASK}}
+ negotiation auto
+!
+ip route 0.0.0.0 0.0.0.0 {{DEFAULT_GATEWAY}}
+!
+{%-include 'NTP.j2' %}
+!

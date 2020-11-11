@@ -1,0 +1,8 @@
+{#aaa config#}
+aaa new-model
+!
+!
+aaa authentication login default {{METHOD}}
+aaa authorization exec default {{METHOD}} if-authenticated 
+!
+aaa session-id common
