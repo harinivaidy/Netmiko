@@ -12,12 +12,12 @@ env.loader =  FileSystemLoader('.')
 my_vars = {
 
     'Interface1':'Ethernet1/4',
-    'IP_Address1':'10.1.100.1',
+    'IP_Address1':'10.1.200.1',
     'Interface2':'Ethernet1/4',
-    'IP_Address2':'10.1.100.2',
+    'IP_Address2':'10.1.200.2',
     'netmask':24,
-    'neighbor_Ip1':'10.1.100.2',
-    'neighbor_Ip2':'10.1.100.1',
+    'neighbor_Ip1':'10.1.200.2',
+    'neighbor_Ip2':'10.1.200.1',
     'AS_number':22
 
     }
@@ -42,21 +42,21 @@ print("Logging into NXOS devices")
 print("-"*25)
 from my_devices_exercise2c import nxos1,nxos2
 
-try: 
-    ssh_connection1 = Netmiko(**nxos1)
-    output1 = ssh_connection1.send_config_set(nxos1_config, cmd_verify = False)
-    print(output1)
-    output1 += ssh_connection1.exit_config_mode()
-    pprint(output1)
-except ValueError:
-    print("Value Error Occured")
-    ssh_connection2 = Netmiko(**nxos2)
-    output2 = ssh_connection2.send_config_set(nxos2_config, cmd_verify = False)
-    pprint(output2)
-except ValueError:
-    print("Value Error Occured")
-    output3 = ssh_connection1.send_command_timing("show bgp sessions")
-    output4 = ssh_connection2.send_command_timing("ping 10.1.100.1")
+#try: 
+ssh_connection1 = Netmiko(**nxos1)
+output1 = ssh_connection1.send_config_set(nxos1_config, cmd_verify = False)
+print(output1)
+output1 += ssh_connection1.exit_config_mode()
+pprint(output1)
+#except ValueError:
+#    print("Value Error Occured")
+ssh_connection2 = Netmiko(**nxos2)
+output2 = ssh_connection2.send_config_set(nxos2_config, cmd_verify = False)
+pprint(output2)
+#except ValueError:
+ #   print("Value Error Occured")
+  #  output3 = ssh_connection1.send_command_timing("show bgp sessions")
+   # output4 = ssh_connection2.send_command_timing("ping 10.1.100.1")
 #    print(output3)
  #   print(output4)
 #
