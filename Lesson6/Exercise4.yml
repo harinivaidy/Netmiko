@@ -5,6 +5,10 @@ arista1:
     username: pyclass
     password: PASSWORD
     port: 443 
+    data:
+        intf_name: Loopback95
+        intf_ip: 172.31.1.1
+        intf_mask : 24
 
 arista2:
     transport: https
@@ -12,6 +16,10 @@ arista2:
     username: pyclass
     password: PASSWORD
     port: 443
+    data:
+        intf_name: Loopback96
+        intf_ip: 172.31.1.2
+        intf_mask : 24
 
 arista3:
     transport: https
@@ -19,6 +27,10 @@ arista3:
     username: pyclass
     password: PASSWORD
     port: 443
+    data:
+        intf_name: Loopback97
+        intf_ip: 172.31.1.3
+        intf_mask : 24
 
 arista4:
     transport: https
@@ -26,3 +38,8 @@ arista4:
     username: pyclass
     password: PASSWORD
     port: 443
+    data:
+        intf_name: Loopback98
+        intf_ip: 172.31.1.4 
+        intf_mask : 24
+
