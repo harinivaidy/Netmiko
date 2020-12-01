@@ -47,12 +47,11 @@ print("-"*30)
 
 cmd = ['interface Loopback 187','description Loopback187', 'interface Loopback 189', 'description Loopback188']
 
-for i in cmd:
 
-    my_xml2 = device.config_list(i)
-    print(my_xml2)
-    CONFIG = etree.tostring(my_xml2[0]).decode()
-    print(CONFIG)
+my_xml2 = device.config_list(cmd)
+print(my_xml2)
+CONFIG = etree.tostring(my_xml2[0]).decode()
+print(CONFIG)
 
 
 
