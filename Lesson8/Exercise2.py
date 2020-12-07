@@ -25,7 +25,7 @@ def gather_arp_table():
     #pprint(ARP_TABLE.items())
     return ARP_TABLE.items() 
 
-#gather_arp_table()
+gather_arp_table()
 
 def gather_routes():
 
@@ -38,7 +38,7 @@ def gather_routes():
     #pprint(ROUTE_TABLE.items())
     return ROUTE_TABLE.items()
 
-#gather_routes()
+gather_routes()
 
 def print_output():
     
@@ -61,6 +61,6 @@ def print_output():
     print("Username : {}".format(DEV.user))
     print("Port Used to connect : {}".format(DEV.port))    
    
-print_output()
+#print_output()
 
 
