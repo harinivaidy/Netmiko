@@ -26,13 +26,5 @@ nxos1 = {
     }
 }
 
-print("\n")
-print("Cisco3")
-pprint(cisco3)
-print("\n")
-print("Arista1")
-pprint(arista1)
-print("\n")
-print("NXOS1")
-pprint(nxos1)
-print("\n")
+device = [cisco3,arista1]
+pprint(device)

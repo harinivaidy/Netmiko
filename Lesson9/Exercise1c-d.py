@@ -1,5 +1,4 @@
 from getpass import getpass
-from my_devices import cisco3,arista1
 from Exercise1b import conn
 from pprint import pprint
 

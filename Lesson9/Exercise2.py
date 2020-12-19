@@ -1,14 +1,13 @@
 from pprint import pprint
 from getpass import getpass
-from my_functions import create_backup,conn
+from my_functions import create_backup,connection_objects
+from Exercise1b import conn
+
+pprint(connection_objects)
 
 def arp_ntp():
 
-    connection_objects1 = list(conn())
-    pprint(connection_objects1)
-    print("\n")
-
-    for i in connection_objects1[0:]:
+    for i in connection_objects[0:]:
         print(i)
         print("-"*40)
         i.open()
@@ -27,13 +26,12 @@ def arp_ntp():
 
 
 def main():
-
+ 
     arp_ntp()
     print("\n")
     print("Creating Backup")
     print("-"*20)
-    #create_backup()
+    create_backup(connection_objects)
 
 main()
 
-create_backup()
