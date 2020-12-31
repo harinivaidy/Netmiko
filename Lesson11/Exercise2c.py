@@ -1,9 +1,9 @@
 from pprint import pprint
 import requests
 
-url = "https://netbox.lasthop.io/api/dcim/"
+url = "https://netbox.lasthop.io/api/"
 
-response = requests.get(url, verify = False)
+response = requests.get(f"{url}dcim/", verify = False)
 k = response.json()
 print("\n")
 pprint(k)
