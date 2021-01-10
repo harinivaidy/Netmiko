@@ -1,0 +1,1 @@
+OrderedDict([('zones-information', OrderedDict([('zones-security', OrderedDict([('zones-security-zonename', 'trust'), ('zones-security-send-reset', 'Off'), ('zones-security-policy-configurable', 'Yes'), ('zones-security-interfaces-bound', '1'), ('zones-security-interfaces', OrderedDict([('zones-security-interface-name', 'vlan.0')]))]))]))])
